@@ -1,0 +1,243 @@
+:root{
+   --light-magenta: hsl(293, 100%, 63%); 
+   --Light-Violet: hsl(264, 100%, 61%);
+   --White: hsl(0, 0%, 100%);
+   --app-background: hsl(270, 20%, 96%);
+   --main-heading: hsl(271, 36%, 24%);
+   --paragraph:hsl(270, 7%, 64%);
+   --left-chat:hsl(276, 55%, 52%);
+   --left-background: hsl(293,33%,90%);
+   --radio: hsl(206, 6%, 79%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+/* Start Background */
+.wrapper{
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+}
+.body-image{
+    background-image: url(assets/background-image.png), url(assets/Rectangle\ 244.png);
+   background-size: 30% 90dvh, 25% 100dvh;
+   background-repeat: no-repeat;
+   background-position: -5% -10%, 100% -100%;
+  height: 90dvb;  
+  /* position: absolute;
+  left: 2rem;
+  */
+}
+/* End of background */
+
+/* Start of profile */
+.profile{
+    display: flex;
+    color: white;
+    background-image: linear-gradient(90deg ,var(--Light-Violet), var(--light-magenta));
+    width: 15rem;
+    padding: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: relative;
+    padding-top: 1.5rem;
+}
+.profile-image img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    
+}
+.left{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}.position-div{
+width: 7rem;
+height: 1.5rem;
+background-color: white;
+border-radius: 1rem;
+position: absolute;
+top: -.5rem;
+left: 25%;
+}
+
+#form{
+    width: 17rem;
+   height: 85dvh;
+   background-color: var(--White);
+   border-radius: 2rem;
+   box-shadow: 0 0 5px #ddd, 10px 10px 15px rgba(0, 0, 0, 0.2);
+   padding: 1rem 1rem;
+}
+
+.wrapper{
+    display: flex;
+    gap: 5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+
+}
+
+
+.chat-body{
+    background-color: var(--app-background);
+    height: 65dvh;
+    width: 15rem;
+    padding: .1rem .5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+/* booking section */
+.booking{
+    width: 35%;
+}
+.booking h1{
+    color: var(--main-heading);
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+.booking p{
+color: var(--paragraph);
+}
+/* Chats */
+.chat1{
+    width: 65%;
+    color: var(--left-chat);
+    background-color: var(--left-background);
+    border-radius: .5rem;
+    margin-top: .3rem;
+   padding: .3rem;
+}
+.dogs img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: .5rem;
+  
+    
+}
+.dogs{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .4rem;
+    gap: .1rem;
+}
+.chat2{
+    width: 65%;
+    background-color: var(--White);
+    border-radius: .5rem;
+    margin-top: .4rem;
+    padding: .3rem;
+    
+}
+.chat-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+.radio1{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    background-image: linear-gradient(90deg ,var(--light-magenta) ,var(--Light-Violet));
+    padding: .5rem;
+    width: 75%;
+    margin-top: .4rem;
+    border-radius: .5rem;
+}
+.radio1 h4{
+    color: var(--White);
+   margin-left: 2rem;
+}
+.radio1 p{
+    color: var(--radio);
+}
+.radio1 input[type="radio"]{
+   appearance: none;
+   border: 1.5px solid hsl(289, 100%, 72%);
+   padding: .25rem;
+   border-radius: 1rem;
+}
+.submit{
+    background-color: var(--White);
+    padding-left: 1rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+.submit input{
+    border: 0;
+    outline: none;
+
+}
+.submit button{
+    background-color: hsl(271, 36%, 24%);
+    padding: .5rem;
+    border-radius: 1.5rem;
+    color: var(--White);
+    cursor: pointer;
+    border: none;
+}
+#form p{
+    font-size: .5rem;
+}
+/* responsiveness */
+@media(max-width:578px){
+   .wrapper{
+    display: block;
+    margin: auto;
+   }
+   .booking{
+    display: unset;
+     
+    text-align: center;
+   }
+   .booking p{
+    padding: 1rem 3rem;
+   }
+   #form{
+   margin: auto;
+   margin-bottom: 3rem;
+   }
+   
+   .body-image{
+    background-image: url(assets/background-image.png);
+   background-size: 70% 90dvh;
+   background-repeat: no-repeat;
+   background-position:  -80% -60%;
+  height: 90dvb;  
+    }
+}
+@media(min-width: 578px) and (max-width:786px) {
+    #form{
+        margin-left: 5rem;
+    }
+    .body-image{
+        background-image: url(assets/background-image.png), url(assets/Rectangle\ 244.png);
+       background-size: 30% 90dvh, 15% 100dvh;
+       background-repeat: no-repeat;
+       background-position: -5% -10%, 100% -100%;
+      height: 90dvb;  
+      /* position: absolute;
+      left: 2rem;
+      */
+    }
+}
