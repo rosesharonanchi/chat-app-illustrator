@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/rosesharonanchi/chat-app-illustrator.git)
+- Live Site URL: (https://rosesharonanchi.github.io/chat-app-illustrator/)
 
 ### Built with
 
@@ -66,7 +66,7 @@ Users should be able to:
 ### Useful resources
 
 - [Example resource 1](https://www.figma.com) - This helped me for creating the two background images of my desired shape and color and also linear gradient.
-- [Example resource 2](https://) - This site helped me get the necessary icons which were required.
+- [Example resource 2](https://fontawesome.com/) - This site helped me get the necessary icons which were required.
 
 
 
